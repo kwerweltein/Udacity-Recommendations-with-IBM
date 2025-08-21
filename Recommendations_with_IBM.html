@@ -7535,7 +7535,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [236]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -7543,6 +7543,8 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">project_tests</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">t</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pickle</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">'ignore'</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span> <span class="c1">#supress warnings due to readability</span>
 
 <span class="o">%</span><span class="k">matplotlib</span> inline
 
@@ -7563,7 +7565,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[236]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7631,7 +7633,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [237]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
@@ -7645,7 +7647,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[237]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>(45993, 3)</pre>
 </div>
@@ -7657,7 +7659,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [238]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -7693,7 +7695,7 @@ memory usage: 1.1+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [239]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
@@ -7707,7 +7709,7 @@ memory usage: 1.1+ MB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[239]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>article_id    float64
 title          object
@@ -7722,7 +7724,7 @@ dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [240]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Show df_content to get an idea of the data</span>
@@ -7737,7 +7739,7 @@ dtype: object</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[240]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7817,7 +7819,7 @@ dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [241]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_content</span><span class="o">.</span><span class="n">shape</span>
@@ -7831,7 +7833,7 @@ dtype: object</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[241]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>(1056, 5)</pre>
 </div>
@@ -7843,7 +7845,7 @@ dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [242]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_content</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -7881,7 +7883,7 @@ memory usage: 41.4+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [243]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_content</span><span class="p">[</span><span class="s1">'article_id'</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
@@ -7895,7 +7897,7 @@ memory usage: 41.4+ KB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[243]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>1051</pre>
 </div>
@@ -7919,7 +7921,7 @@ memory usage: 41.4+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [244]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#user interactions:</span>
@@ -7934,7 +7936,7 @@ memory usage: 41.4+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [245]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># median value:</span>
@@ -7949,7 +7951,7 @@ memory usage: 41.4+ KB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[245]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.float64(3.0)</pre>
 </div>
@@ -7961,7 +7963,7 @@ memory usage: 41.4+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [246]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># max views</span>
@@ -7976,7 +7978,7 @@ memory usage: 41.4+ KB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[246]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.int64(364)</pre>
 </div>
@@ -7988,7 +7990,7 @@ memory usage: 41.4+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [247]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Fill in the median and maximum number of user_article interactios below</span>
@@ -8004,7 +8006,7 @@ memory usage: 41.4+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [248]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
@@ -8044,7 +8046,7 @@ memory usage: 41.4+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [249]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Find and explore duplicate articles</span>
@@ -8059,7 +8061,7 @@ memory usage: 41.4+ KB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[249]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.int64(5)</pre>
 </div>
@@ -8071,7 +8073,7 @@ memory usage: 41.4+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [250]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">duplicated_article_ids</span> <span class="o">=</span> <span class="n">df_content</span><span class="p">[</span><span class="n">df_content</span><span class="o">.</span><span class="n">duplicated</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="s1">'article_id'</span><span class="p">,</span> <span class="n">keep</span><span class="o">=</span><span class="s1">'first'</span><span class="p">)][</span><span class="s1">'article_id'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
@@ -8143,7 +8145,7 @@ all rows with duplicated id:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [251]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Remove any rows that have the same article_id - only keep the first</span>
@@ -8158,7 +8160,7 @@ all rows with duplicated id:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [252]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#check for sucess</span>
@@ -8173,7 +8175,7 @@ all rows with duplicated id:
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[252]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.int64(0)</pre>
 </div>
@@ -8211,7 +8213,7 @@ all rows with duplicated id:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [253]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -8240,7 +8242,7 @@ all rows with duplicated id:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [254]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># a. The number of unique articles that have an interaction with a user</span>
@@ -8255,7 +8257,7 @@ all rows with duplicated id:
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[254]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>714</pre>
 </div>
@@ -8267,7 +8269,7 @@ all rows with duplicated id:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [255]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># b. The number of unique articles in the dataset (whether they have any interactions or not) / should be equal to size</span>
@@ -8282,7 +8284,7 @@ all rows with duplicated id:
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[255]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>1051</pre>
 </div>
@@ -8294,7 +8296,7 @@ all rows with duplicated id:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [256]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># c. The number of unique users in the dataset</span>
@@ -8309,7 +8311,7 @@ all rows with duplicated id:
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[256]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>5149</pre>
 </div>
@@ -8321,7 +8323,7 @@ all rows with duplicated id:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [257]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#the number above contains the 0 user</span>
@@ -8336,7 +8338,7 @@ all rows with duplicated id:
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[257]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>5148</pre>
 </div>
@@ -8348,7 +8350,7 @@ all rows with duplicated id:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [258]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># d. The number of user-article interactions in the dataset</span>
@@ -8363,7 +8365,7 @@ all rows with duplicated id:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [259]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">unique_articles</span> <span class="o">=</span> <span class="mi">714</span> <span class="c1"># The number of unique articles that have at least one interaction</span>
@@ -8391,7 +8393,7 @@ all rows with duplicated id:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [260]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># most viewed article_id</span>
@@ -8406,7 +8408,7 @@ all rows with duplicated id:
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[260]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>article_id
 1429.0    937
@@ -8421,7 +8423,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [261]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">most_viewed_article_id</span> <span class="o">=</span> <span class="s1">'1429.0'</span> <span class="c1"># The most viewed article in the dataset as a string with one value following the decimal </span>
@@ -8436,7 +8438,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [262]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">## No need to change the code here - this will be helpful for later parts of the notebook</span>
@@ -8471,7 +8473,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[262]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8539,7 +8541,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [263]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">## If you stored all your results in the variable names above, </span>
@@ -8593,7 +8595,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [264]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_top_articles</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">):</span>
@@ -8635,7 +8637,746 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [265]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>[1429.0,
+ 1330.0,
+ 1431.0,
+ 1427.0,
+ 1364.0,
+ 1314.0,
+ 1293.0,
+ 1170.0,
+ 1162.0,
+ 1304.0,
+ 1436.0,
+ 1271.0,
+ 1398.0,
+ 43.0,
+ 1351.0,
+ 1393.0,
+ 1185.0,
+ 1160.0,
+ 1354.0,
+ 1368.0,
+ 1305.0,
+ 1338.0,
+ 1336.0,
+ 1165.0,
+ 1172.0,
+ 151.0,
+ 1276.0,
+ 1432.0,
+ 1430.0,
+ 1052.0,
+ 124.0,
+ 1343.0,
+ 1163.0,
+ 1400.0,
+ 390.0,
+ 1164.0,
+ 20.0,
+ 732.0,
+ 1017.0,
+ 260.0,
+ 164.0,
+ 681.0,
+ 1054.0,
+ 1437.0,
+ 1053.0,
+ 1360.0,
+ 1174.0,
+ 1171.0,
+ 600.0,
+ 1396.0,
+ 1332.0,
+ 1274.0,
+ 109.0,
+ 237.0,
+ 1296.0,
+ 1166.0,
+ 1391.0,
+ 1282.0,
+ 1386.0,
+ 108.0,
+ 1367.0,
+ 1324.0,
+ 1394.0,
+ 1025.0,
+ 542.0,
+ 1176.0,
+ 241.0,
+ 1183.0,
+ 1422.0,
+ 482.0,
+ 116.0,
+ 1320.0,
+ 12.0,
+ 250.0,
+ 1423.0,
+ 98.0,
+ 415.0,
+ 812.0,
+ 268.0,
+ 162.0,
+ 1328.0,
+ 1186.0,
+ 730.0,
+ 33.0,
+ 57.0,
+ 969.0,
+ 1426.0,
+ 1047.0,
+ 1405.0,
+ 939.0,
+ 409.0,
+ 1424.0,
+ 120.0,
+ 981.0,
+ 593.0,
+ 125.0,
+ 943.0,
+ 910.0,
+ 641.0,
+ 51.0,
+ 193.0,
+ 865.0,
+ 1357.0,
+ 1395.0,
+ 729.0,
+ 1428.0,
+ 1435.0,
+ 1181.0,
+ 1014.0,
+ 53.0,
+ 194.0,
+ 510.0,
+ 213.0,
+ 1420.0,
+ 221.0,
+ 795.0,
+ 122.0,
+ 1410.0,
+ 1433.0,
+ 651.0,
+ 809.0,
+ 1048.0,
+ 673.0,
+ 684.0,
+ 933.0,
+ 1278.0,
+ 880.0,
+ 1055.0,
+ 1416.0,
+ 645.0,
+ 833.0,
+ 957.0,
+ 844.0,
+ 462.0,
+ 1317.0,
+ 723.0,
+ 34.0,
+ 369.0,
+ 173.0,
+ 477.0,
+ 316.0,
+ 202.0,
+ 14.0,
+ 101.0,
+ 26.0,
+ 50.0,
+ 1050.0,
+ 8.0,
+ 153.0,
+ 525.0,
+ 349.0,
+ 223.0,
+ 336.0,
+ 821.0,
+ 310.0,
+ 669.0,
+ 658.0,
+ 958.0,
+ 1016.0,
+ 362.0,
+ 1057.0,
+ 18.0,
+ 189.0,
+ 1180.0,
+ 103.0,
+ 486.0,
+ 138.0,
+ 131.0,
+ 29.0,
+ 975.0,
+ 1277.0,
+ 1024.0,
+ 682.0,
+ 1184.0,
+ 379.0,
+ 1425.0,
+ 40.0,
+ 1366.0,
+ 1403.0,
+ 74.0,
+ 232.0,
+ 111.0,
+ 788.0,
+ 495.0,
+ 39.0,
+ 692.0,
+ 353.0,
+ 1059.0,
+ 1018.0,
+ 329.0,
+ 959.0,
+ 617.0,
+ 766.0,
+ 32.0,
+ 110.0,
+ 898.0,
+ 205.0,
+ 996.0,
+ 1298.0,
+ 16.0,
+ 470.0,
+ 315.0,
+ 278.0,
+ 508.0,
+ 254.0,
+ 152.0,
+ 1439.0,
+ 1321.0,
+ 2.0,
+ 1056.0,
+ 695.0,
+ 1406.0,
+ 1060.0,
+ 78.0,
+ 68.0,
+ 1169.0,
+ 76.0,
+ 761.0,
+ 559.0,
+ 464.0,
+ 1158.0,
+ 1175.0,
+ 647.0,
+ 64.0,
+ 547.0,
+ 903.0,
+ 130.0,
+ 444.0,
+ 1409.0,
+ 210.0,
+ 749.0,
+ 1402.0,
+ 1044.0,
+ 911.0,
+ 962.0,
+ 1028.0,
+ 314.0,
+ 485.0,
+ 1404.0,
+ 448.0,
+ 240.0,
+ 494.0,
+ 491.0,
+ 465.0,
+ 422.0,
+ 1313.0,
+ 253.0,
+ 764.0,
+ 744.0,
+ 607.0,
+ 967.0,
+ 1042.0,
+ 283.0,
+ 887.0,
+ 843.0,
+ 132.0,
+ 382.0,
+ 263.0,
+ 930.0,
+ 1418.0,
+ 350.0,
+ 1350.0,
+ 609.0,
+ 1157.0,
+ 566.0,
+ 1411.0,
+ 142.0,
+ 224.0,
+ 1051.0,
+ 251.0,
+ 1434.0,
+ 28.0,
+ 1356.0,
+ 825.0,
+ 878.0,
+ 725.0,
+ 295.0,
+ 236.0,
+ 1329.0,
+ 1299.0,
+ 440.0,
+ 813.0,
+ 184.0,
+ 665.0,
+ 1290.0,
+ 1178.0,
+ 634.0,
+ 158.0,
+ 92.0,
+ 288.0,
+ 871.0,
+ 1337.0,
+ 1159.0,
+ 136.0,
+ 793.0,
+ 244.0,
+ 977.0,
+ 693.0,
+ 864.0,
+ 846.0,
+ 411.0,
+ 855.0,
+ 955.0,
+ 337.0,
+ 891.0,
+ 302.0,
+ 311.0,
+ 191.0,
+ 359.0,
+ 239.0,
+ 146.0,
+ 230.0,
+ 705.0,
+ 1263.0,
+ 606.0,
+ 727.0,
+ 427.0,
+ 868.0,
+ 528.0,
+ 1189.0,
+ 1173.0,
+ 721.0,
+ 225.0,
+ 936.0,
+ 1279.0,
+ 1286.0,
+ 1225.0,
+ 563.0,
+ 858.0,
+ 65.0,
+ 1331.0,
+ 782.0,
+ 381.0,
+ 102.0,
+ 965.0,
+ 297.0,
+ 107.0,
+ 113.0,
+ 768.0,
+ 951.0,
+ 1168.0,
+ 667.0,
+ 861.0,
+ 143.0,
+ 15.0,
+ 990.0,
+ 1155.0,
+ 1387.0,
+ 968.0,
+ 928.0,
+ 1138.0,
+ 585.0,
+ 1412.0,
+ 952.0,
+ 1280.0,
+ 784.0,
+ 346.0,
+ 735.0,
+ 89.0,
+ 1273.0,
+ 905.0,
+ 1397.0,
+ 284.0,
+ 273.0,
+ 1161.0,
+ 1349.0,
+ 81.0,
+ 367.0,
+ 455.0,
+ 1219.0,
+ 1150.0,
+ 299.0,
+ 1198.0,
+ 348.0,
+ 583.0,
+ 252.0,
+ 892.0,
+ 347.0,
+ 145.0,
+ 1363.0,
+ 659.0,
+ 1058.0,
+ 1061.0,
+ 524.0,
+ 1407.0,
+ 1443.0,
+ 468.0,
+ 1177.0,
+ 616.0,
+ 722.0,
+ 599.0,
+ 215.0,
+ 62.0,
+ 398.0,
+ 622.0,
+ 195.0,
+ 54.0,
+ 618.0,
+ 234.0,
+ 266.0,
+ 112.0,
+ 460.0,
+ 993.0,
+ 339.0,
+ 1358.0,
+ 475.0,
+ 80.0,
+ 352.0,
+ 876.0,
+ 656.0,
+ 36.0,
+ 720.0,
+ 291.0,
+ 882.0,
+ 632.0,
+ 680.0,
+ 1035.0,
+ 87.0,
+ 324.0,
+ 323.0,
+ 1281.0,
+ 569.0,
+ 686.0,
+ 785.0,
+ 298.0,
+ 479.0,
+ 30.0,
+ 1008.0,
+ 522.0,
+ 1362.0,
+ 1152.0,
+ 1408.0,
+ 480.0,
+ 670.0,
+ 1000.0,
+ 270.0,
+ 60.0,
+ 1190.0,
+ 233.0,
+ 181.0,
+ 115.0,
+ 258.0,
+ 426.0,
+ 313.0,
+ 319.0,
+ 1292.0,
+ 25.0,
+ 853.0,
+ 557.0,
+ 0.0,
+ 277.0,
+ 1006.0,
+ 1154.0,
+ 544.0,
+ 1149.0,
+ 935.0,
+ 412.0,
+ 1289.0,
+ 678.0,
+ 59.0,
+ 986.0,
+ 4.0,
+ 1359.0,
+ 356.0,
+ 157.0,
+ 1145.0,
+ 862.0,
+ 1232.0,
+ 1261.0,
+ 500.0,
+ 759.0,
+ 715.0,
+ 399.0,
+ 668.0,
+ 492.0,
+ 1143.0,
+ 82.0,
+ 1361.0,
+ 176.0,
+ 373.0,
+ 366.0,
+ 881.0,
+ 932.0,
+ 1141.0,
+ 949.0,
+ 58.0,
+ 1415.0,
+ 463.0,
+ 77.0,
+ 1377.0,
+ 48.0,
+ 1153.0,
+ 134.0,
+ 751.0,
+ 383.0,
+ 896.0,
+ 9.0,
+ 532.0,
+ 781.0,
+ 926.0,
+ 256.0,
+ 919.0,
+ 626.0,
+ 1295.0,
+ 1440.0,
+ 437.0,
+ 948.0,
+ 303.0,
+ 428.0,
+ 1191.0,
+ 117.0,
+ 400.0,
+ 1369.0,
+ 1142.0,
+ 1077.0,
+ 375.0,
+ 473.0,
+ 330.0,
+ 1074.0,
+ 973.0,
+ 183.0,
+ 1065.0,
+ 655.0,
+ 1124.0,
+ 100.0,
+ 567.0,
+ 1306.0,
+ 1038.0,
+ 1148.0,
+ 1441.0,
+ 446.0,
+ 1120.0,
+ 1221.0,
+ 515.0,
+ 1260.0,
+ 857.0,
+ 1146.0,
+ 1079.0,
+ 517.0,
+ 1097.0,
+ 1062.0,
+ 1151.0,
+ 1333.0,
+ 1114.0,
+ 1192.0,
+ 1030.0,
+ 1125.0,
+ 534.0,
+ 1253.0,
+ 404.0,
+ 906.0,
+ 1004.0,
+ 96.0,
+ 1291.0,
+ 1401.0,
+ 1348.0,
+ 760.0,
+ 188.0,
+ 502.0,
+ 679.0,
+ 1318.0,
+ 1063.0,
+ 1139.0,
+ 1254.0,
+ 763.0,
+ 1179.0,
+ 1319.0,
+ 1257.0,
+ 588.0,
+ 1140.0,
+ 714.0,
+ 1187.0,
+ 1123.0,
+ 941.0,
+ 1419.0,
+ 351.0,
+ 1070.0,
+ 805.0,
+ 1252.0,
+ 474.0,
+ 1015.0,
+ 564.0,
+ 355.0,
+ 1073.0,
+ 1199.0,
+ 1066.0,
+ 1444.0,
+ 1085.0,
+ 1228.0,
+ 1080.0,
+ 1071.0,
+ 389.0,
+ 1234.0,
+ 610.0,
+ 1247.0,
+ 701.0,
+ 521.0,
+ 555.0,
+ 429.0,
+ 1043.0,
+ 1084.0,
+ 1371.0,
+ 1116.0,
+ 1315.0,
+ 740.0,
+ 1308.0,
+ 553.0,
+ 1294.0,
+ 1068.0,
+ 800.0,
+ 985.0,
+ 1442.0,
+ 1147.0,
+ 1267.0,
+ 1307.0,
+ 420.0,
+ 997.0,
+ 1414.0,
+ 1297.0,
+ 884.0,
+ 363.0,
+ 1106.0,
+ 1128.0,
+ 1078.0,
+ 1355.0,
+ 1421.0,
+ 395.0,
+ 631.0,
+ 1206.0,
+ 961.0,
+ 1108.0,
+ 1064.0,
+ 1285.0,
+ 870.0,
+ 586.0,
+ 1230.0,
+ 1303.0,
+ 1086.0,
+ 1235.0,
+ 1390.0,
+ 376.0,
+ 757.0,
+ 947.0,
+ 940.0,
+ 1135.0,
+ 1101.0,
+ 1372.0,
+ 1251.0,
+ 1091.0,
+ 504.0,
+ 575.0,
+ 1227.0,
+ 636.0,
+ 1089.0,
+ 1326.0,
+ 443.0,
+ 1195.0,
+ 1137.0,
+ 758.0,
+ 1226.0,
+ 430.0,
+ 1340.0,
+ 1069.0,
+ 1197.0,
+ 1122.0,
+ 1067.0,
+ 1134.0,
+ 778.0,
+ 364.0,
+ 1365.0,
+ 1112.0,
+ 644.0,
+ 1144.0,
+ 1130.0,
+ 677.0,
+ 499.0,
+ 1378.0,
+ 1188.0,
+ 1208.0,
+ 1334.0,
+ 416.0,
+ 1203.0,
+ 972.0,
+ 708.0,
+ 1156.0,
+ 1075.0,
+ 1121.0,
+ 1210.0,
+ 1167.0,
+ 384.0,
+ 1244.0,
+ 1346.0,
+ 1083.0,
+ 1283.0,
+ 1335.0,
+ 1196.0,
+ 662.0,
+ 675.0,
+ 984.0,
+ 1202.0,
+ 1072.0,
+ 1200.0,
+ 1266.0,
+ 1119.0,
+ 1344.0,
+ 1113.0,
+ 1127.0,
+ 974.0,
+ 1092.0,
+ 1237.0,
+ 653.0,
+ 724.0,
+ 417.0,
+ 1233.0]</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">get_top_articles</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
@@ -8664,7 +9405,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [266]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Test your function by returning the top 5, 10, and 20 articles</span>
@@ -8721,7 +9462,7 @@ Your top_20 looks like the solution list! Nice job.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [267]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># create the user-article matrix with 1's and 0's</span>
@@ -8757,7 +9498,7 @@ Your top_20 looks like the solution list! Nice job.
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[267]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>(5149, 714)</pre>
 </div>
@@ -8769,7 +9510,7 @@ Your top_20 looks like the solution list! Nice job.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [268]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">user_item</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -8783,7 +9524,7 @@ Your top_20 looks like the solution list! Nice job.
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[268]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8984,7 +9725,7 @@ Your top_20 looks like the solution list! Nice job.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [269]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Tests: You should just need to run this cell.  Don't change the code.</span>
@@ -9027,7 +9768,7 @@ Your top_20 looks like the solution list! Nice job.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [270]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">find_similar_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">user_item</span><span class="o">=</span><span class="n">user_item</span><span class="p">):</span>
@@ -9076,7 +9817,7 @@ Your top_20 looks like the solution list! Nice job.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [271]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Do a spot check of your function</span>
@@ -9122,7 +9863,7 @@ The 3 most similar users to user 44586 are: []
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [272]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_article_names</span><span class="p">(</span><span class="n">article_ids</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">):</span>
@@ -9215,7 +9956,7 @@ The 3 most similar users to user 44586 are: []
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [273]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Check Results</span>
@@ -9230,7 +9971,7 @@ The 3 most similar users to user 44586 are: []
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[273]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>['recommender systems: approaches &amp; algorithms',
  '1448    i ranked every intro to data science course on...\nName: title, dtype: object',
@@ -9251,7 +9992,7 @@ The 3 most similar users to user 44586 are: []
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [274]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Test your functions here - No need to change this code - just run this cell</span>
@@ -9297,12 +10038,12 @@ The 3 most similar users to user 44586 are: []
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [275]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [96]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">user_item</span><span class="o">=</span><span class="n">user_item</span><span class="p">):</span>
@@ -9346,10 +10087,75 @@ The 3 most similar users to user 44586 are: []
 
     <span class="c1"># 2. Calculate the number of interactions for each user</span>
     <span class="c1"># The number of interactions is the sum of 1s in each row of the user_item matrix</span>
+    <span class="n">num_interactions_per_user</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'user_id'</span><span class="p">)[</span><span class="s1">'article_id'</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+    
+    <span class="n">num_interactions_per_user_df</span> <span class="o">=</span> <span class="n">num_interactions_per_user</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+    <span class="n">num_interactions_per_user_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'neighbor_id'</span><span class="p">,</span> <span class="s1">'num_interactions'</span><span class="p">]</span>
+    
+        
+
+    <span class="c1"># 3. Merge the number of interactions into the neighbors_df</span>
+    <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">neighbors_df</span><span class="p">,</span> <span class="n">num_interactions_per_user_df</span><span class="p">,</span>
+                            <span class="n">on</span><span class="o">=</span><span class="s1">'neighbor_id'</span><span class="p">,</span>
+                            <span class="n">how</span><span class="o">=</span><span class="s1">'left'</span><span class="p">)</span> <span class="c1"># Use left merge to keep all neighbors_df rows</span>
+
+    <span class="c1"># 4. Sort the DataFrame</span>
+    <span class="c1"># First, sort by similarity in descending order.</span>
+    <span class="c1"># Then, for users with the same similarity, sort by num_interactions in descending order.</span>
+    <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">neighbors_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'similarity'</span><span class="p">,</span> <span class="s1">'num_interactions'</span><span class="p">],</span>
+                                            <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">])</span>
+    
+    <span class="k">return</span> <span class="n">neighbors_df</span> <span class="c1"># Return the dataframe specified in the doc_string</span>
+
+<span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">131</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">get_top_sorted_users_b</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">user_item</span><span class="o">=</span><span class="n">user_item</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">'''</span>
+<span class="sd">    !!!!ALTERNATIVE IMPLEMENTATION!!!!</span>
+<span class="sd">    INPUT:</span>
+<span class="sd">    user_id - (int)</span>
+<span class="sd">    df - (pandas dataframe) df as defined at the top of the notebook </span>
+<span class="sd">    user_item - (pandas dataframe) matrix of users by articles: </span>
+<span class="sd">            1's when a user has interacted with an article, 0 otherwise</span>
+<span class="sd">    </span>
+<span class="sd">            </span>
+<span class="sd">    OUTPUT:</span>
+<span class="sd">    neighbors_df - (pandas dataframe) a dataframe with:</span>
+<span class="sd">                    neighbor_id - is a neighbor user_id</span>
+<span class="sd">                    similarity - measure of the similarity of each user to the provided user_id</span>
+<span class="sd">                    num_interactions - the number of articles viewed by the user - if a u</span>
+<span class="sd">                    </span>
+<span class="sd">    Other Details - sort the neighbors_df by the similarity and then by number of interactions where </span>
+<span class="sd">                    highest of each is higher in the dataframe</span>
+<span class="sd">     </span>
+<span class="sd">    '''</span>
+        <span class="c1"># Ensure the user_id exists in the user_item matrix</span>
+    <span class="k">if</span> <span class="n">user_id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">user_item</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Error: user_id </span><span class="si">{</span><span class="n">user_id</span><span class="si">}</span><span class="s2"> not found in user_item matrix."</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span> <span class="c1"># Return an empty DataFrame</span>
+
+    <span class="c1"># 1. Compute similarity scores</span>
+    <span class="c1"># Get the vector for the target user</span>
+    <span class="n">user_vector</span> <span class="o">=</span> <span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">user_id</span><span class="p">]</span>
+
+    <span class="c1"># Calculate the dot product between the target user's vector and all other users' vectors</span>
+    <span class="c1"># The result is a Series where index is user_id and values are similarity scores</span>
+    <span class="n">similarity_scores</span> <span class="o">=</span> <span class="n">user_item</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">user_vector</span><span class="p">)</span>
+
+    <span class="c1"># Create a DataFrame from the similarity scores</span>
+    <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">similarity_scores</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+    <span class="n">neighbors_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'neighbor_id'</span><span class="p">,</span> <span class="s1">'similarity'</span><span class="p">]</span> <span class="c1"># Rename columns for clarity</span>
+
+    <span class="c1"># Remove the target user's own entry from this DataFrame, as we're looking for neighbors</span>
+    <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">neighbors_df</span><span class="p">[</span><span class="n">neighbors_df</span><span class="p">[</span><span class="s1">'neighbor_id'</span><span class="p">]</span> <span class="o">!=</span> <span class="n">user_id</span><span class="p">]</span>
+
+    <span class="c1"># 2. Calculate the number of interactions for each user</span>
+    <span class="c1"># The number of interactions is the sum of 1s in each row of the user_item matrix</span>
     <span class="n">num_interactions_per_user</span> <span class="o">=</span> <span class="n">user_item</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">num_interactions_per_user</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">num_interactions_per_user</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
     <span class="n">num_interactions_per_user</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'neighbor_id'</span><span class="p">,</span> <span class="s1">'num_interactions'</span><span class="p">]</span>
-
+    
 
     <span class="c1"># 3. Merge the number of interactions into the neighbors_df</span>
     <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">neighbors_df</span><span class="p">,</span> <span class="n">num_interactions_per_user</span><span class="p">,</span>
@@ -9363,7 +10169,6 @@ The 3 most similar users to user 44586 are: []
                                             <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">])</span>
     
     <span class="k">return</span> <span class="n">neighbors_df</span> <span class="c1"># Return the dataframe specified in the doc_string</span>
-
 
 <span class="k">def</span><span class="w"> </span><span class="nf">user_user_recs_part2</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">'''</span>
@@ -9393,28 +10198,164 @@ The 3 most similar users to user 44586 are: []
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"User ID </span><span class="si">{</span><span class="n">user_id</span><span class="si">}</span><span class="s2"> not found in the user-item matrix."</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">recs</span><span class="p">,</span> <span class="n">rec_names</span>
 
-    <span class="n">recs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([])</span> <span class="c1"># recommendations to be made</span>
+    <span class="n">recs</span> <span class="o">=</span> <span class="p">[]</span>
     
-    <span class="n">user_articles_ids_seen</span><span class="p">,</span> <span class="n">user_articles_names_seen</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">user_item</span><span class="p">)</span> <span class="c1">#article ids seen by our user</span>
-    <span class="n">closest_neighs</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="n">user_item</span><span class="p">)</span><span class="o">.</span><span class="n">neighbor_id</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span> <span class="c1"># neighbour user ids closest to our user</span>
-    
-    <span class="k">for</span> <span class="n">neighs</span> <span class="ow">in</span> <span class="n">closest_neighs</span><span class="p">:</span>
-        
-        <span class="n">neigh_articles_ids_seen</span><span class="p">,</span> <span class="n">neigh_articles_names_seen</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">neighs</span><span class="p">,</span> <span class="n">user_item</span><span class="p">)</span> <span class="c1"># articles seen by others like our user</span>
-        <span class="n">new_recs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">setdiff1d</span><span class="p">(</span><span class="n">neigh_articles_ids_seen</span><span class="p">,</span> <span class="n">user_articles_ids_seen</span><span class="p">,</span> <span class="n">assume_unique</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1">#find those not seen by user</span>
-        <span class="n">recs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">new_recs</span><span class="p">,</span> <span class="n">recs</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">))</span> <span class="c1"># concate arrays and only return unique values</span>
+    <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
 
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">m</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span>
-            <span class="k">break</span>
-            
-    <span class="n">recs</span> <span class="o">=</span> <span class="n">recs</span><span class="p">[:</span><span class="n">m</span><span class="p">]</span>
-    <span class="n">recs</span> <span class="o">=</span> <span class="n">recs</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span> <span class="c1"># convert to a list</span>
+    <span class="n">the_user_articles</span><span class="p">,</span> <span class="n">the_article_names</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">neighbors_df</span><span class="p">[</span><span class="s1">'neighbor_id'</span><span class="p">]:</span>
+        <span class="n">article_ids</span><span class="p">,</span> <span class="n">article_names</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+        <span class="k">for</span> <span class="nb">id</span> <span class="ow">in</span> <span class="n">article_ids</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">the_user_articles</span><span class="p">:</span>
+                <span class="n">recs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">m</span><span class="p">:</span>
+                <span class="k">break</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">m</span><span class="p">:</span>
+                <span class="k">break</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">m</span><span class="p">:</span>
+        <span class="k">for</span> <span class="nb">id</span> <span class="ow">in</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="k">for</span> <span class="nb">id</span> <span class="ow">in</span> <span class="n">get_top_article_ids</span><span class="p">(</span><span class="mi">45993</span><span class="p">)]:</span>
+            <span class="k">if</span> <span class="nb">id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">the_user_articles</span><span class="p">:</span>
+                <span class="n">recs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">m</span><span class="p">:</span>
+                    <span class="k">break</span>
     
-    <span class="n">rec_names</span> <span class="o">=</span> <span class="n">get_article_names</span><span class="p">(</span><span class="n">recs</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">)</span>
-    
+    <span class="n">rec_names</span> <span class="o">=</span> <span class="n">get_article_names</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span>
     
     <span class="k">return</span> <span class="n">recs</span><span class="p">,</span> <span class="n">rec_names</span>
+
+
+
+
+
+
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">user_user_recs_part2_b</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""</span>
+<span class="sd">    INPUT:</span>
+<span class="sd">    user_id - (int) a user id</span>
+<span class="sd">    m - (int) the number of recommendations you want for the user</span>
+<span class="sd">    </span>
+<span class="sd">    OUTPUT:</span>
+<span class="sd">    recs - (list) a list of recommendations for the user by article id</span>
+<span class="sd">    rec_names - (list) a list of recommendations for the user by article title</span>
+<span class="sd">    </span>
+<span class="sd">    Description:</span>
+<span class="sd">    Loops through the users based on closeness to the input user_id</span>
+<span class="sd">    For each user - finds articles the user hasn't seen before and provides them as recs</span>
+<span class="sd">    Does this until m recommendations are found</span>
+<span class="sd">    </span>
+<span class="sd">    Notes:</span>
+<span class="sd">    * Choose the users that have the most total article interactions </span>
+<span class="sd">    before choosing those with fewer article interactions.</span>
+
+<span class="sd">    * Choose articles with the articles with the most total interactions </span>
+<span class="sd">    before choosing those with fewer total interactions. </span>
+<span class="sd">   </span>
+<span class="sd">    """</span>
+    <span class="n">recs</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">forbidden_ids</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">user_item</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">forbidden_ids</span><span class="p">)</span>
+    <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="n">user_item</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">neighbors_df</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">neighbor_id</span> <span class="ow">in</span> <span class="n">neighbors_df</span><span class="p">[</span><span class="s1">'neighbor_id'</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">m</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">'too low reccs '</span><span class="p">)</span>
+            <span class="k">break</span>
+        
+        
+        <span class="n">new_recs</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">neighbor_id</span><span class="p">,</span> <span class="n">user_item</span><span class="p">)</span>
+        <span class="n">df_sorted</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">article_id</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">new_recs</span><span class="p">)]</span>
+        <span class="n">new_recs_sorted</span> <span class="o">=</span> <span class="n">get_top_article_ids</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">new_recs</span><span class="p">),</span> <span class="n">df_sorted</span><span class="p">)</span>
+        
+        <span class="k">for</span> <span class="n">article_id</span> <span class="ow">in</span> <span class="n">new_recs_sorted</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">article_id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">forbidden_ids</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">m</span><span class="p">:</span>
+                <span class="n">recs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">article_id</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">m</span><span class="p">:</span>
+                <span class="k">break</span>
+    
+    <span class="n">rec_names</span> <span class="o">=</span> <span class="n">get_article_names</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">recs</span><span class="p">,</span> <span class="n">rec_names</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">user_user_recs_part3</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">'''</span>
+<span class="sd">    INPUT:</span>
+<span class="sd">    user_id - (int) a user id</span>
+<span class="sd">    m - (int) the number of recommendations you want for the user</span>
+<span class="sd">    </span>
+<span class="sd">    OUTPUT:</span>
+<span class="sd">    recs - (list) a list of recommendations for the user by article id</span>
+<span class="sd">    rec_names - (list) a list of recommendations for the user by article title</span>
+<span class="sd">    </span>
+<span class="sd">    Description:</span>
+<span class="sd">    Loops through the users based on closeness to the input user_id</span>
+<span class="sd">    For each user - finds articles the user hasn't seen before and provides them as recs</span>
+<span class="sd">    Does this until m recommendations are found</span>
+<span class="sd">    </span>
+<span class="sd">    Notes:</span>
+<span class="sd">    * Choose the users that have the most total article interactions </span>
+<span class="sd">    before choosing those with fewer article interactions.</span>
+
+<span class="sd">    * Choose articles with the articles with the most total interactions </span>
+<span class="sd">    before choosing those with fewer total interactions. </span>
+<span class="sd">   </span>
+<span class="sd">    '''</span>
+     
+    <span class="n">recs</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="c1"># Get the articles that the user has already seen</span>
+    <span class="n">articles_already_seen_ids</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">user_item</span><span class="p">)</span>  <span class="c1"># Returns a tuple of article IDs and titles, we only need IDs</span>
+        
+    <span class="c1"># Get a sorted DataFrame of similar users</span>
+    <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="n">user_item</span><span class="p">)</span>  
+    
+    <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">neighbors_df</span><span class="p">[</span><span class="s1">'neighbor_id'</span><span class="p">]:</span>
+        
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">m</span><span class="p">:</span>  <span class="c1"># Exit if we have enough recommendations</span>
+            <span class="k">break</span>
+            
+        <span class="c1"># Get articles seen by the similar user</span>
+        <span class="n">new_recs</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">user_item</span><span class="p">)</span> 
+        
+        <span class="c1"># Filter the DataFrame for articles that the similar user has read</span>
+        <span class="n">df_sorted</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">article_id</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">new_recs</span><span class="p">)]</span>  
+        
+        <span class="c1"># Get the number of new recommendations to consider</span>
+        <span class="n">number_new_recs</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">new_recs</span><span class="p">)</span>        
+        
+        <span class="c1"># Get the top article IDs based on interactions</span>
+        <span class="n">new_recs_sorted</span> <span class="o">=</span> <span class="n">get_top_article_ids</span><span class="p">(</span><span class="n">number_new_recs</span><span class="p">,</span> <span class="n">df_sorted</span><span class="p">)</span> 
+        
+        <span class="k">for</span> <span class="n">article_id</span> <span class="ow">in</span> <span class="n">new_recs_sorted</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">article_id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">articles_already_seen_ids</span><span class="p">:</span>  <span class="c1"># Ensure the article hasn't been seen by the user</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">m</span><span class="p">:</span>  <span class="c1"># Exit if we have enough recommendations</span>
+                    <span class="k">break</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">recs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">article_id</span><span class="p">)</span>  <span class="c1"># Add the article ID to the recommendations</span>
+                    
+    <span class="c1"># Get the names of the recommended articles</span>
+    <span class="n">rec_names</span> <span class="o">=</span> <span class="n">get_article_names</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span>  
+    
+    <span class="k">return</span> <span class="n">recs</span><span class="p">,</span> <span class="n">rec_names</span>
+
+
+<span class="n">user_user_recs_part3</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[96]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>([], [])</pre>
 </div>
 </div>
 </div>
@@ -9424,7 +10365,311 @@ The 3 most similar users to user 44586 are: []
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [276]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [76]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">user_user_recs</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">get_article_names</span><span class="p">(</span><span class="n">user_user_recs</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span> <span class="c1"># Return 10 recommendations for user 1</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[76]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>['using deep learning to reconstruct high-resolution audio',
+ 'airbnb data for analytics: chicago listings',
+ 'tensorflow quick tips',
+ 'airbnb data for analytics: venice calendar',
+ 'airbnb data for analytics: venice listings',
+ 'airbnb data for analytics: venice reviews',
+ 'airbnb data for analytics: vienna calendar',
+ 'airbnb data for analytics: vienna listings',
+ 'airbnb data for analytics: washington d.c. listings',
+ 'analyze accident reports on amazon emr spark']</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [77]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">user_user_recs_part2</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[77]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>(['12.0',
+  '109.0',
+  '125.0',
+  '142.0',
+  '164.0',
+  '205.0',
+  '302.0',
+  '336.0',
+  '362.0',
+  '465.0'],
+ ['timeseries data analysis of iot events by using jupyter notebook',
+  'tensorflow quick tips',
+  'statistics for hackers',
+  'neural networks for beginners: popular types and applications',
+  'learn tensorflow and deep learning together and now!',
+  "a beginner's guide to variational methods",
+  'accelerate your workflow with dsx',
+  'challenges in deep learning',
+  'dsx: hybrid mode',
+  'introduction to neural networks, advantages and applications'])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [94]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">user_user_recs_part2</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[94]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>(['12.0',
+  '109.0',
+  '125.0',
+  '142.0',
+  '164.0',
+  '205.0',
+  '302.0',
+  '336.0',
+  '362.0',
+  '465.0'],
+ ['timeseries data analysis of iot events by using jupyter notebook',
+  'tensorflow quick tips',
+  'statistics for hackers',
+  'neural networks for beginners: popular types and applications',
+  'learn tensorflow and deep learning together and now!',
+  "a beginner's guide to variational methods",
+  'accelerate your workflow with dsx',
+  'challenges in deep learning',
+  'dsx: hybrid mode',
+  'introduction to neural networks, advantages and applications'])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [88]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[88]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>neighbor_id</th>
+<th>similarity</th>
+<th>num_interactions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>168</th>
+<td>170</td>
+<td>2.0</td>
+<td>116</td>
+</tr>
+<tr>
+<th>3167</th>
+<td>3169</td>
+<td>2.0</td>
+<td>114</td>
+</tr>
+<tr>
+<th>202</th>
+<td>204</td>
+<td>2.0</td>
+<td>97</td>
+</tr>
+<tr>
+<th>5136</th>
+<td>5138</td>
+<td>2.0</td>
+<td>95</td>
+</tr>
+<tr>
+<th>38</th>
+<td>40</td>
+<td>2.0</td>
+<td>78</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>5139</th>
+<td>5141</td>
+<td>0.0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>5142</th>
+<td>5144</td>
+<td>0.0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>5145</th>
+<td>5147</td>
+<td>0.0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>5146</th>
+<td>5148</td>
+<td>0.0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>5147</th>
+<td>5149</td>
+<td>0.0</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>5148 rows × 3 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [73]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">num_interactions_per_user</span> <span class="o">=</span> <span class="n">user_item</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">num_interactions_per_user</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">num_interactions_per_user</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">num_interactions_per_user</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'neighbor_id'</span><span class="p">,</span> <span class="s1">'num_interactions'</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num_interactions_per_user</span><span class="p">)</span>
+
+<span class="n">df_grouped</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'user_id'</span><span class="p">)[</span><span class="s1">'article_id'</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_grouped</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>      neighbor_id  num_interactions
+0               1              36.0
+1               2               6.0
+2               3              40.0
+3               4              26.0
+4               5               3.0
+...           ...               ...
+5144         5145               5.0
+5145         5146               7.0
+5146         5147               1.0
+5147         5148               1.0
+5148         5149               1.0
+
+[5149 rows x 2 columns]
+user_id
+1       47
+2        6
+3       82
+4       45
+5        5
+        ..
+5145     6
+5146     9
+5147     1
+5148     1
+5149     1
+Name: article_id, Length: 5149, dtype: int64
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Quick spot check - don't change this code - just use it to test your functions</span>
@@ -9447,10 +10692,10 @@ The 3 most similar users to user 44586 are: []
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>The top 10 recommendations for user 20 are the following article ids:
-['1014.0', '1059.0', '109.0', '111.0', '1157.0', '1162.0', '1164.0', '1172.0', '1186.0', '12.0']
+['12.0', '109.0', '125.0', '142.0', '164.0', '205.0', '302.0', '336.0', '362.0', '465.0']
 
 The top 10 recommendations for user 20 are the following article names:
-['1448    i ranked every intro to data science course on...\nName: title, dtype: object', 'airbnb data for analytics: amsterdam calendar', 'tensorflow quick tips', 'tidy up your jupyter notebooks with scripts', 'airbnb data for analytics: washington d.c. listings', 'analyze energy consumption in buildings', 'analyze open data sets with pandas dataframes', 'apache spark lab, part 3: machine learning', 'connect to db2 warehouse on cloud and db2 using scala', 'timeseries data analysis of iot events by using jupyter notebook']
+['timeseries data analysis of iot events by using jupyter notebook', 'tensorflow quick tips', 'statistics for hackers', 'neural networks for beginners: popular types and applications', 'learn tensorflow and deep learning together and now!', "a beginner's guide to variational methods", 'accelerate your workflow with dsx', 'challenges in deep learning', 'dsx: hybrid mode', 'introduction to neural networks, advantages and applications']
 </pre>
 </div>
 </div>
@@ -9472,7 +10717,7 @@ The top 10 recommendations for user 20 are the following article names:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [277]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -9486,11 +10731,11 @@ The top 10 recommendations for user 20 are the following article names:
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[277]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>neighbor_id         3933.0
 similarity            35.0
-num_interactions      35.0
+num_interactions      45.0
 Name: 3931, dtype: float64</pre>
 </div>
 </div>
@@ -9501,10 +10746,10 @@ Name: 3931, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [278]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">131</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">131</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -9515,11 +10760,130 @@ Name: 3931, dtype: float64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[278]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>neighbor_id</th>
+<th>similarity</th>
+<th>num_interactions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>3868</th>
+<td>3870</td>
+<td>74.0</td>
+<td>144</td>
+</tr>
+<tr>
+<th>3780</th>
+<td>3782</td>
+<td>39.0</td>
+<td>363</td>
+</tr>
+<tr>
+<th>22</th>
+<td>23</td>
+<td>38.0</td>
+<td>364</td>
+</tr>
+<tr>
+<th>201</th>
+<td>203</td>
+<td>33.0</td>
+<td>160</td>
+</tr>
+<tr>
+<th>4457</th>
+<td>4459</td>
+<td>33.0</td>
+<td>158</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>5129</th>
+<td>5131</td>
+<td>0.0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>5139</th>
+<td>5141</td>
+<td>0.0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>5142</th>
+<td>5144</td>
+<td>0.0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>5145</th>
+<td>5147</td>
+<td>0.0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>5147</th>
+<td>5149</td>
+<td>0.0</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>5148 rows × 3 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">131</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>neighbor_id         242.0
 similarity           25.0
-num_interactions     59.0
+num_interactions    148.0
 Name: 240, dtype: float64</pre>
 </div>
 </div>
@@ -9530,7 +10894,7 @@ Name: 240, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [279]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">### Tests with a dictionary of results</span>
@@ -9547,7 +10911,7 @@ Name: 240, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [280]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Dictionary Test Here</span>
@@ -9614,7 +10978,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [281]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">new_user</span> <span class="o">=</span> <span class="s1">'0.0'</span>
@@ -9632,7 +10996,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [282]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">assert</span> <span class="nb">set</span><span class="p">(</span><span class="n">new_user_recs</span><span class="p">)</span> <span class="o">==</span> <span class="nb">set</span><span class="p">([</span><span class="s1">'1314.0'</span><span class="p">,</span><span class="s1">'1429.0'</span><span class="p">,</span><span class="s1">'1293.0'</span><span class="p">,</span><span class="s1">'1427.0'</span><span class="p">,</span><span class="s1">'1162.0'</span><span class="p">,</span><span class="s1">'1364.0'</span><span class="p">,</span><span class="s1">'1304.0'</span><span class="p">,</span><span class="s1">'1170.0'</span><span class="p">,</span><span class="s1">'1431.0'</span><span class="p">,</span><span class="s1">'1330.0'</span><span class="p">]),</span> <span class="s2">"Oops!  It makes sense that in this case we would want to recommend the most popular articles, because we don't know anything about these users."</span>
@@ -9674,7 +11038,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [283]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">make_content_recs</span><span class="p">():</span>
@@ -9729,7 +11093,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [284]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># make recommendations for a brand new user</span>
@@ -9758,7 +11122,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [285]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Load the matrix here</span>
@@ -9773,7 +11137,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [286]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># quick look at the matrix</span>
@@ -9788,7 +11152,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[286]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -10000,7 +11364,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [287]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Perform SVD on the User-Item Matrix Here</span>
@@ -10038,7 +11402,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [288]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">num_latent_feats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">700</span><span class="o">+</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
@@ -10074,14 +11438,6 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
 <img alt="No description has been provided for this image" class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjcAAAHHCAYAAABDUnkqAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjEsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvc2/+5QAAAAlwSFlzAAAPYQAAD2EBqD+naQAAVhVJREFUeJzt3Qd8FGX6wPEnvQAJJZBACL13BGmKiCKIiF2xnCAinh4qipVDwY7lRCwofwuWQ8UG6J0UAbFwokiV3iG0BEJJIEDq/D/PG3bdhARSNpktv+/nM9nd2dndd96dzDz71gDLsiwBAADwEYF2JwAAAMCdCG4AAIBPIbgBAAA+heAGAAD4FIIbAADgUwhuAACATyG4AQAAPoXgBgAA+BSCGwAA4FMIbgB4nICAALnnnnvEG2RnZ8sjjzwiCQkJEhgYKFdddZXdSQL8HsEN3Oatt94yF6WuXbvanRScxY4dO8x3pcvXX3992vNPPvmkeS4lJcWW9HmTKVOmyMsvvyzXXXedfPTRR/LAAw8Uue2FF14obdq0ccvn/vrrr+Z7OnLkiJS3vXv3ms9auXJlsbb/8MMPncdXweWxxx4rlzRWZH7A8wXbnQD4jk8++UQaNGggS5YskS1btkiTJk3sThKK4emnn5ZrrrnGXHhQcj/88IPEx8fLq6++WqGfqxfzp556Sm677TapWrVquQc3+ln6/92hQ4cSHVsNGzbMt85dwZ2d+QHPR3ADt9i+fbs5uUyfPl3+/ve/m0Bn3Lhx4onS09OlUqVKdifDI+iFSn+Nz5gxwwQ4/uTkyZMSGhpqqpLKYv/+/VxMi9C/f3/p3LmzeDPOF96Jaim4hQYz1apVkwEDBpjieX1cGC0y1mJ7/QUYFhYmdevWlcGDB+er/tCLjhYvN2vWTMLDw6V27drmwrt161bz/I8//mhKGfS2sKoWLRJ30F9xlStXNq+97LLLpEqVKnLLLbeY53755Re5/vrrpV69eiYt2mZC03bixInT0r1hwwa54YYbpGbNmhIRESHNmzeXMWPGmOcWLlxoPlcDhII+/fRT89zixYsLzY+lS5ea57U6o6C5c+ea5/773/+ax0ePHpX777/fmXe1atWSSy65RJYvXy6ldeONN5p81l/YlmWdcVv9XM3PwqpadHFwfD9ffPGF+SWtpRqa73pcpKamSkZGhtkPTb9+N0OHDjXrCqPHkea1HgedOnWSn3/++bRt9uzZI7fffrvExsaafGndurWpKnLlSNO0adPk8ccfN2mKjIyUtLS0M17UHnzwQXNc6PtqOv71r38588lxvOn3v3btWme1S8HjsqT+/PNPk8+NGjUy+x0XF2f27+DBg85t9P/j4YcfNve1ZMTx2Zomh6lTp5o80+O1evXq5rvetWtXodVk69atk969e5s80bx56aWX8uXdueeea+7rd+X4LNf/s9KaPXu29OzZ0wQPeozo+UPz0p35Udh5wUHX62td30fXaX7cfPPN5px2/vnnlyhPN2/eLNdee61Jp6ZXz3G6nR77qDiU3MAt9CKkAYj+Er7pppvk7bfflj/++MN5UlTHjh0zJ7L169ebk9M555xjgppvv/1Wdu/eLTExMZKTkyOXX365LFiwwJwQRo4caS7q8+bNkzVr1kjjxo1L1eCzX79+5iSlFyc9gasvv/xSjh8/LnfffbfUqFHDVKe98cYbJi36nOvJVdMdEhIid955p7nIa7D0n//8R5577jlzgdALoObB1VdffVq+aJq7d+9eaNr0V62etDUQGDJkSL7nPv/8c3Ny1bSru+66S7766ivT0LZVq1bm5L5o0SKTn5qXpREUFGQu9hpgurv0Zvz48eYioG0stJpS81bzUEtKDh8+bC4kv/32m7no6AVp7Nix+V7/008/mTy47777THChbbouvfRS8z05qjaSk5OlW7duzgbIGnzqBXPYsGEmcNEgytUzzzxjjtGHHnrIBFR6vzAawFxxxRUmcNH30hIuDTb1AqrBlFZB6Wf9+9//NseAHtu6v6ply5Zlyjc91rdt22YCCb1A6sX+nXfeMbeaX7qv+j1t2rRJPvvsM5MW/d9RmialaXriiSdMQH7HHXfIgQMHTP5fcMEFsmLFinwlTfpdaL7qe+r2eow9+uij0rZtW1Pyovujwa9+P3r86/+C6tGjx1n3RS/oBdttOdKqeafHvB7fL774ovlf1POG/p9qGvX/zB35ofteUvqjp2nTpvL88887g9ni5GlmZqbZHz227r33XpNePV70B4r+sIuOji5xWlBKFlBGS5cu1f9+a968eeZxbm6uVbduXWvkyJH5ths7dqzZbvr06ae9h75GTZkyxWwzYcKEIrdZuHCh2UZvXW3fvt2s/+CDD5zrhgwZYtY99thjp73f8ePH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T5dGjRrJJZdcItOmTZOMjIySvg281NfLd8u6fWlSJTxY7u/DrN8AAB8JblauXClLliyRli1byr333iu1a9eWe+65R5YvX14+qYRHSM/IlpfnbjT377uoqVSvFGp3kgAAcF+bm3POOUdef/112bt3r4wbN07ee+89Offcc6VDhw4yZcoUM98QfMv//bRVDhzNkPo1ImVwj/p2JwcAgEIFSyllZWXJjBkz5IMPPpB58+ZJt27dZNiwYbJ792755z//KfPnz5dPP/20tG8PD7P3yAl555dt5v7o/i0kLDjI7iQBAOCe4EarnjSg+eyzzyQwMFAGDx4sr776qrRo8deEiVdffbUpxYHv0Oqok1m50qVhdenXOs7u5AAA4L7gRoMWbUj89ttvy1VXXSUhIacPud+wYUO58cYbS/rW8FArdx2RGSv2SECAyBMDWkmA3gEAwFeCm23btkn9+mdub1GpUiVTugPvp22nnv3vOnP/mo51pW3daLuTBACAexsU79+/X37//ffT1uu6pUuXSmlMmjTJjJ8THh4uXbt2NT2xinLhhReakoOCy4ABA0r12TizWauTZOnOwxIREiQP92tud3IAAHB/cDNixAjZtWvXaev37Nljniupzz//XEaNGmV6XGl7nvbt20u/fv1MEFUYHWNn3759zmXNmjUSFBQk119/fYk/G2eWkZ0jL8zJG7Dv770aSVx0uN1JAgDA/cHNunXrTDfwgjp27GieK6kJEybI8OHDZejQodKqVSuZPHmyREZGmu7khalevbrExcU5F+2ppdsT3LjfrNX7ZNehE1KrSpjceUEju5MDAED5BDdhYWGSnJx82notRQkOLlkTnszMTFm2bJn06dPnrwQFBprHixcvLtZ7vP/++6bxsrbzKYyOnpyWlpZvQfH8e/FOc3trt/oSGVrqUQMAAPDs4KZv374yevRoSU1Nda47cuSIGdtGe1GVREpKiuTk5EhsbGy+9fo4KSnprK/XtjlaLXXHHXcUuc348eMlOjrauSQkJJQojf5qzZ5UWZ54REKCAmRQF/IMAODDwc2//vUv0+ZGe0z17t3bLNr1W4ORV155RSqSltq0bdtWunTpUuQ2jkDMsRTWXghFl9pc2qa21KpCWxsAgPcocV1DfHy8/Pnnn/LJJ5/IqlWrJCIiwrSXuemmmwod8+ZMYmJiTGPggtVc+ljb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1pQpU6y1a9daw4cPt6pWrWolJydbvmLWrFnWmDFjrOnTp2svOmvGjBn5nn/hhRes6Ohoa+bMmdaqVausK664wmrYsKF14sQJ5zaXXnqp1b59e+u3336zfvnlF6tJkybWTTfdZHmTfv36WR988IG1Zs0aa+XKldZll11m1atXzzp27Jhzm7vuustKSEiwFixYYC1dutTq1q2b1aNHD+fz2dnZVps2baw+ffpYK1asMHkbExNjjR492vIW3377rfXdd99ZmzZtsjZu3Gj985//tEJCQky++EseFLRkyRKrQYMGVrt27ayRI0c61/tLXowbN85q3bq1tW/fPudy4MABv8uHQ4cOWfXr17duu+026/fff7e2bdtmzZ0719qyZYtfnS/379+f71iYN2+euXYsXLjQ1uOB4KYEunTpYo0YMcL5OCcnx6pTp441fvx4yxcVDG5yc3OtuLg46+WXX3auO3LkiBUWFmZ99tln5vG6devM6/744w/nNrNnz7YCAgKsPXv2WN5K/4F1v3766SfnfutF/ssvv3Rus379erPN4sWLzWP9Jw0MDLSSkpKc27z99ttWVFSUlZGRYXmratWqWe+9955f5sHRo0etpk2bmhN4r169nMGNP+WFBjd6MS6MP+XDo48+ap1//vlFPu+v58uRI0dajRs3Nvtv5/FAtVQxZWZmyrJly0yxous8Vfp48eLF4g+2b98uSUlJ+fJA5/nQ6jlHHuitFq127tzZuY1ur3n1+++/i7dKTU01t9WrVze3eixkZWXlywstmq9Xr16+vNBi6tjYWOc2/fr1M5PHrV27VrxNTk6OTJs2TdLT0031lD/mgRava/G56z4rf8sLrVrRqutGjRqZKhWtVvC3fPj222/Nee766683VSkdO3aUd99916/Pl5mZmTJ16lS5/fbbTdWUnccDwU0xpaSkmJO76xeg9LEewP7AsZ9nygO91X90V8HBwSYo8NZ80pnktW3FeeedJ23atDHrdF9CQ0PNielMeVFYXjme8xarV682deU6quhdd90lM2bMkFatWvlVHigN7JYvX27aYxXkT3mhF+cPP/xQ5syZY9pk6UW8Z8+eZrZmf8qHbdu2mf1v2rSpzJ07V+6++26577775KOPPvLb8+XMmTPlyJEjctttt5nHdh4PfjcrOFCaX+tr1qyRRYsWiT9q3ry5rFy50pRe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rZuZabsswY0+zsnJca7TC17Pnj2dj7Ozs61KlSqZ4ML1QvbCCy84t9EZdzXYefHFF81jDYj69u2b77M1OHKd6VeDm44dO551f+vUqWMCLVfnnnuumRnYQfdT9/dMzhbcFPTll19aNWrUcD7WC7le0F3t3LnTCgoKsvbs2ZNvvc7WrIGd43W6364zXU+aNMnM7FzStOl2+nn6fTiW6667zvmZzz//fL7t//3vf5vgoiz7WJLgRoMjV40bNz4tWNFjo3v37ub+vffea1100UVmtmvAkwXbV2YE+B9td3PRRReZapHSat26tQQG/lWjrFVIWs3koFUe2o5l//79+V7XvXt35/3g4GDp3LmzrF+/3jxetWqVLFy40FTBFNY+plmzZuZ+p06dzpi2tLQ02bt3r5x33nn51utj/Qx3mj9/vqkS0eo2/Vytzjl58qQcP35cIiMjC33N6tWrJScnx7k/DlpV5dr2R1/fuHFj52OthimYn8XVu3dvefvtt52PtYpJaX7873//k+eee875nKbNdR9Ks48loceAQ3p6uvmuhw0bJsOHD3eu18+Mjo52Votecskl0rx5c1NVd/nll0vfvn3LnA7A3QhugAp0wQUXmLYqo0ePNhcKVxqw5P3oPnMjz5CQkHyPte1EYeu07UtxaTuOgQMHmuCrIL2wF7ww203bjOiF9e677zbBgbY1WrRokbkwa7uQoi78up8a/GmbH0e7FwfXwK6w/Cz43RSX5lmTJk0KTYu2sbnmmmtOe07bs5R2H4tKb2HHkuv36WjL8+6775p2SK4ceaXtg7Zv3y6zZ882gdcNN9xg2pN99dVXxcoLoKIQ3AAVTLuEayNb/fXrqmbNmpKUlGQuSo4u4u4cm+a3334zwZXj17he4LVxqOOi9fXXX5vGy1qqU1pRUVFSp04dUyKhDVUd9HGXLl3EXTTtGry98sorzlKsL774It82oaGhpiTEVceOHc06LYXp2bNnqT+/sPcuKc1z7QpfWOBTln10HEuOBtBq8+bNprTnTLQEUL+7bdu2yS233HLG73jQoEFmue6660wJzqFDh0zwBXgKghuggmnvF714vP766/nWa2+kAwcOyEsvvWQuGtrDSH8h68XEHSZNmiRNmzY1PWFeffVV0y399ttvN8+NGDHC/GK/6aab5JFHHjEXKh2LZdq0aab3TMFSjjPRXls6jo1W62gQpz23NEhz9MYpCe0JVDDA0+ojDQi0JOKNN94wJU4aPE2ePDnfdhqoaWmEjqPTvn17U9Kh1VGa94MHDzZBgwY7mue6Tbt27WTAgAHFSpe+t/am0uBE06PVNgVLe85m7NixpmSmXr165vvWAEarqrTX2rPPPlvqfdRFqz7ffPNNUxWpwc+jjz5arPRpSdJ9991n9keDFq2uW7p0qTlWRo0aZXpvaUme5pum98svvzS9vxhrBx7H7kY/gK8rrPGpNugMDQ3N16BYvf3226Y3ijY8HTx4sGmYW7BBccH30oa+I0eOzLdOX6ONkR2fpZ+jDUW7dOliPrdVq1amF44r7S109dVXW1WrVrUiIiKsFi1aWPfff7+z8Whhn1MYbeysPX7i4+NNryNtPDx79ux82xS3QbGmu+AybNgwZ68sbXyradXeYh9//LF5Xnt+Odx1112mAa6ud3xeZmamNXbsWNNTSNOn76H7/eeffxbZSLdg4+/9+/eb3mTae0zXL1y4sMh9OFPD4zlz5pieW7oP2utJv5933nnH+Xxp91EbTGsDcT2OmjZtas2aNavQBsUrVqw4LU2ffPKJ1aFDB3OcVKtWzbrgggtMTz+ladPn9H01vdooWnvWAZ4mQP/YHWABAAC4C4P4AQAAn0JwAwAAfArBDQAA8CkENwAAwKcQ3AAAAJ9CcAMAAHwKwQ0AAPApBDcAAMCnENwAAACfQnADAAB8CsENAADwKQQ3AABAfMn/A8nPu3u4t4poAAAAAElFTkSuQmCC"/>
 </div>
@@ -10111,7 +11467,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [289]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_train</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40000</span><span class="p">)</span>
@@ -10151,7 +11507,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [290]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">test_idx</span><span class="p">)</span> <span class="c1"># users in test set</span>
@@ -10165,7 +11521,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[290]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>682</pre>
 </div>
@@ -10177,7 +11533,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [291]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">train_idx</span> <span class="o">=</span> <span class="n">user_item_train</span><span class="o">.</span><span class="n">index</span> <span class="c1">#user in the training set </span>
@@ -10192,7 +11548,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[291]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>4487</pre>
 </div>
@@ -10204,7 +11560,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [292]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">test_idx</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">train_idx</span><span class="p">))</span> <span class="c1">#user who are in the test but not in the training set</span>
@@ -10218,7 +11574,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[292]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>662</pre>
 </div>
@@ -10230,7 +11586,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [293]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">test_arts</span><span class="p">)</span> <span class="c1">#article in test set</span>
@@ -10244,7 +11600,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[293]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[64]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>574</pre>
 </div>
@@ -10256,7 +11612,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [294]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">train_arts</span> <span class="o">=</span> <span class="n">user_item_train</span><span class="o">.</span><span class="n">columns</span> <span class="c1">#  number of articles in the training set</span>
@@ -10271,7 +11627,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[294]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[65]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>714</pre>
 </div>
@@ -10283,7 +11639,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [295]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">test_arts</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">train_arts</span><span class="p">)</span> <span class="c1">#articles which are in the test but not in the training set</span>
@@ -10297,7 +11653,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[295]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[66]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>Index([], dtype='float64', name='article_id')</pre>
 </div>
@@ -10309,7 +11665,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [296]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Replace the values in the dictionary below</span>
@@ -10362,7 +11718,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [297]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># fit SVD on the user_item_train matrix</span>
@@ -10377,7 +11733,7 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [298]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Use these cells to see how well you can use the training </span>
@@ -10393,19 +11749,19 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[298]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[69]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>((714,), (4487, 4487), (714, 714))</pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [70]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">num_latent_feats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">714</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span> <span class="c1">#714 is maximum due to shape of vt_train / tradeoff between accuracy and computing time</span>
@@ -10447,118 +11803,12 @@ It is only possible to make a recommendation based on maximum popularity. (via t
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\fromnumeric.py:84: FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
-  return reduction(axis=axis, out=out, **passkwargs)
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [312]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># plotting the training and test accuracies</span>
@@ -10646,7 +11896,7 @@ C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\from
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [322]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">subprocess</span><span class="w"> </span><span class="kn">import</span> <span class="n">call</span>
@@ -10661,7 +11911,7 @@ C:\Users\bet1btn\AppData\Roaming\Python\Python312\site-packages\numpy\_core\from
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[322]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[72]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>0</pre>
 </div>
